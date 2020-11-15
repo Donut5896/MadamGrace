@@ -189,14 +189,14 @@ section{
 
 .main-nav {
   
-    text-align: center;
-    font-size: 1.1em;
+    text-align: right;
+    font-size: 1.25em;
     font-weight: lighter;
     border-bottom: 1px solid rgba(255, 255, 255, .3)
 }
 
 .main-nav li {
-    padding: 0 5%;
+    padding: 2% 2%;
 }
 
 .nav a:hover {
@@ -206,7 +206,7 @@ section{
 .main-header {
     background-color: rgba(0, 0, 0, .6);
    
-   background : url("Images/hero.jpg");
+    background-color: rgb(20, 20, 44);
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
@@ -262,7 +262,7 @@ section{
 
 .main-footer {
    
-    background-color: #333;
+    background-color: rgb(20, 20, 44);
     color: white;
     padding: .25em 0;
     bottom: 0;
@@ -569,3 +569,25 @@ h3.band-names{
     display: block;
     align-items: center;
 }
+
+/* --------------- */
+
+.main-footer{
+    justify-content: center;
+    padding: 1.5rem;
+    overflow:hidden;
+    text-align: center;
+}
+footer {
+    background: var(--clr-grey-1);
+    padding: 5rem 1rem;
+  }
+
+
+footer p {
+    color: var(--clr-white);
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    margin-bottom: 0;
+  }

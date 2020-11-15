@@ -50,9 +50,7 @@ const reviews = [
   
   
   // select item
-  const date = document.getElementById("date");
-  date.innerHTML = new Date().getFullYear();
-  
+
 
   const imgfile = document.getElementById("person-img");
   const author = document.getElementById("author");

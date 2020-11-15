@@ -50,6 +50,10 @@ const reviews = [
   
   
   // select item
+  const date = document.getElementById("date");
+  date.innerHTML = new Date().getFullYear();
+  
+
   const imgfile = document.getElementById("person-img");
   const author = document.getElementById("author");
   const job = document.getElementById("job");
@@ -58,10 +62,10 @@ const reviews = [
   const prevBtn = document.querySelector('.prev-btn');
   const randomBtn = document.querySelector('.random-btn');
   const nextBtn = document.querySelector('.next-btn');
+
   //select date
-  const date = document.getElementById("date");
-  date.innerHTML = new Date().getFullYear();
   
+ 
   // set starting item
   let currentItem = 0;
   

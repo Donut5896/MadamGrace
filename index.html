@@ -4,26 +4,38 @@
         <title>MadamGrace</title>
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="styles.css" >
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="app.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+
     </head>
     <body>
-        <header class="main-header">
-            <nav class="nav main-nav">
-                
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="store.html">store</a></li>
-                    <li><a href="product.html">review</a></li>
-                    <li><a href="about.html">about</a></li>
-                    
-                </ul>
+        <header>
+            <nav id="nav">
+                <div class="nav-center">
+                    <!--nav-head-->
+                    <div class="nav-header">
+                        <a href="#" class="logo">MadamGrace</a>
+                        <button class="nav-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <!--links-->
+                    <div class="links-container">
+                        <ul class="links">
+                            <li><a href="index.html #home" class="scroll-link">home</a></li>
+                            <li><a href="store.html ">store</a></li>
+                            <li><a href="#review" class="scroll-link">review</a></li>
+                            <li><a href="#about" class="scroll-link">about</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>    
             </nav>
-
-            <section class="section hero" id="hero" >
+        </header>  
+        <!--banner setion-->
+            <section class="section hero" id="home" >
                 <div class="welcome-text">
-               
-               
                     <h2 class="sub-headline">
                         <span class="first-letter"></span>Welcome
                     </h2>
@@ -31,36 +43,131 @@
                     <div class="headline-description">
                         <div class="seperator">
                             <div class="line line-left"></div>
-                           
+                            <i class="fa fa-asterisk" aria-hidden="true"></i>
                             <div class="line line-right"></div>
                         </div>
                         <div class="single-animation">
                             <h5>Your Skin We Care</h5>
-                            <a href="store.html" class="btn cta-btn">Explore</a>
+                            <a href="store.html" class=" btn cta-btn">Explore</a>
                         </div>
                     </div>
                 </div>  
             </section>
-        </header>    
-      <!--footer -->
-      <footer class="main-footer">
-        <div class="main-footer-container">
-        <p>
-            copyright &copy; Madam Grace brand 2020
-             .all rights reserved
-            
-          </p>
-          
-           <ul class="nav-f footer-nav">
-               
-            <li><a href="https://www.facebook.com/MegaWhiteningSkinCare/"><i class="fa fa-facebook"></i></a></li> 
-             <h4>Follow us</h4>
-         </ul>
+         
+        <!--store section-->
+        <div class="store" id="store">
+            <p>Bestseller</p>
+            <div class="gallery">
+                <div class="box">
+                    <div class="imgBx">
+                        <img  src="./products/1.jpg" class="img" >
+                        <h2>สบู่ล้างหน้าสูตรสมุนไพร</h2>
+                        <p>สูตรมะนาวผสมน้ำผึ้ง ช่วยลดปัญหาสิวเสี้ยนสิ้วอักเสพและลอยหมองคล้ำ 
+                            ใช้ล่างหน้าเป็นประจำทุกวัน เช้า-เย็น ช่วยให้ผิวดูมีออร่าเปล่งปลั่ง
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./products/2.jpg" >
+                        <h2>Mega Whitening Mask</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./products/3.jpg" >
+                        <h2>Mega Whitening Lotion</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./products/4.jpg" >
+                        <h2>Mega Whitening Lotion</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt </p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-animation">
+                <a href="store.html" class="scroll-link btn cta-btn">Shop now</a>
+            </div>
         </div>
-        </footer>          
+
+        <!--review section-->
+        <section class="bigBx">
+            <div class="container-p" id="review">
+              <div class="title">
+                <h2>our review</h2>
+                <div class="underline"></div>
+              </div>
+           
+              <article class="review">
+                <div class="img-container">
+                  <img src="./image/person-1.jpg" id="person-img" alt="" >
+                </div>
+                <h4 id="author">sara jones</h4>
+                <p id="job">UX Designer</p>
+                <p id="info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                   Maecenas convallis nibh erat, ac sollicitudin quam dictum ullamcorper. 
+                   Vivamus ultricies, ex sit amet consequat iaculis, erat tellus maximus leo, 
+                   ac faucibus purus sapien quis diam. Proin gravida, sapien scelerisque
+                </p>
+                <!--prev next button-->
+                <div class="button-container">
+                  <button class="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+                <!--random button-->
+                <button class="random-btn">surprise me</button>
+              </article>
+            </div>
+        </section>      
+          
+       
+        <!--about section-->
+        <div class="aboutus" id="about">
+             <div class="imgBx">
+                <img src="./Images/owner.jpg" class="fitBg">
+            </div>
+            <div class="contentBx">
+            <p>
+                Madam Grace 
+                รวมพลสุดยอดสมุนไพรแท้ปราศจากสารเคมีเจือปน สรรพคุณขั้นเทพมารวมพลังกันอยู่ในสบู่ก้อนเดียว Madam Grace ขจัดสิว ฝ้า จุดด่างดำ 
+                หมองคล้ำ เเห้งกร้าน เหี่ยวย่น ปรับผิวให้ขาว กระจ่างใส กระชับรูขุมขน รวมไปถึงรักษาอาการอักเสบ ช่วยให้ผิวเรียบสวยและเนียนนุ่ม
                 
-                
-            
+                 <span>สนใจสอบถามเพิ่มเติม ติดต่อ : 061-1698-2697</span>
+            </p>
+            <a href="about.html" class="scroll-link btn cta-btn">view more</a>
+            </div>
+           
+        </div>         
+          
+      <!--footer-->
+      <section class="footer" id="contact">
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/MegaWhiteningSkinCare"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <h4 class="copyright">Copyright @2020 <a href="#">MdamGrace</a>. All right reserved.</h4>
+    </section>
+
+     
+        
+        
+         <!--javascript-->       
+          <script src="app.js"></script>       
+        
+       
 
       
 

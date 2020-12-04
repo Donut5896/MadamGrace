@@ -61,8 +61,69 @@ const reviews = [
   const randomBtn = document.querySelector('.random-btn');
   const nextBtn = document.querySelector('.next-btn');
 
-  //select date
+// close links
+const navToggle = document.querySelector(".nav-toggle");
+const linksContainer = document.querySelector(".links-container");
+const links = document.querySelector(".links");
+
+
+
+//**************add new links dinamically **********
+navToggle.addEventListener("click", function () {
+  // linksContainer.classList.toggle("show-links");
+
+  const linksHeight = links.getBoundingClientRect().height;
+  const containerHeight = linksContainer.getBoundingClientRect().height;
+  if (containerHeight === 0) {
+    linksContainer.style.height = `${linksHeight}px`;
+  } else {
+    linksContainer.style.height = 0;
+  }
   
+});
+
+
+//smooth scrolling function
+  const scrollLinks = document.querySelectorAll('.scroll-link');
+  scrollLinks.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        //naviagte to specific spot
+        const id = event.currentTarget.getAttribute("href").slice(1);
+        const element = document.getElementById(id);
+
+        //calculate the height
+        const navHeight = navbar.getBoundingClientRect().height;
+        const containerHeight = linksContainer.getBoundingClientRect().height;
+        const fixedNav = navbar.classList.contains("fixed-nav");
+        let position = element.offsetTop - navHeight;
+
+        if(!fixedNav){
+          position = position - navHeight;
+        }
+        //calculate position for small screen
+        if(navHeight > 82){
+          position = position +  containerHeight ;
+        }
+
+
+        window.scrollTo({
+           left: 0,
+           top: position,
+        });
+        //to close navbar whwn naviagte to the spot
+        linksContaner.getElementsByClassName.height = 0;
+      });
+  });
+
+
+
+  //fixed nav
+  window.addEventListener("scroll", function() {
+    let header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+});
  
   // set starting item
   let currentItem = 0;
@@ -81,6 +142,8 @@ const reviews = [
     job.textContent = item.job;
     info.textContent = item.text;
   }
+
+  
   // show prev person
   prevBtn.addEventListener('click', function(){
     currentItem--;

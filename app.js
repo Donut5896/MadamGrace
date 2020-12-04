@@ -82,7 +82,7 @@ navToggle.addEventListener("click", function () {
   
 });
 
-
+const navbar = document.getElementById('nav');
 //smooth scrolling function
   const scrollLinks = document.querySelectorAll('.scroll-link');
   scrollLinks.forEach(function(link) {
